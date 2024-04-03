@@ -69,7 +69,11 @@
     height: 100%;
     object-fit: cover;
   }
-  
+  #iii {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
   .picture_container {
     border: 5px pink dotted ;
   }
