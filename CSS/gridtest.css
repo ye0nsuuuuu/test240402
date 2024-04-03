@@ -72,7 +72,7 @@
   #iii {
     width: 50%;
     height: 50%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .picture_container {
     border: 5px pink dotted ;
