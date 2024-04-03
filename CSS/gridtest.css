@@ -40,6 +40,11 @@
     padding-left: 20px;
   }
   
+
+  #pass {
+    padding-left: 20px;
+  }
+  
   #active {
     color: red;
   
@@ -49,10 +54,12 @@
     color: blueviolet;
   }
   
+  /* 3x3 사진첩 꾸미기 */
   #grid_pictures {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
+    /* 그리드 내부에서의 행, 열에 여백 주기.  */
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -62,7 +69,7 @@
     height: 100%;
     object-fit: cover;
   }
-
-  .picture{
-    border: 5px blue dotted;
+  
+  .picture_container {
+    border: 5px pink dotted ;
   }
