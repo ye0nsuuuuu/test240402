@@ -1,79 +1,106 @@
 #test {
-    color: blueviolet;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  h1 {
-    color: blue;
-    font-size: 1.5em;
-    text-align: center;
-    border-bottom: 1px gray solid;
-    margin: 0;
-  }
-  
-  /* 순서3, css 파일에서, grid 옵션 작업.  */
-  #grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  
-  #grid ol {
-    padding-left: 30px;
-  }
-  
-  ol {
-    border-right: 1px solid gray;
-    width: 100px;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  #article {
-    padding-left: 20px;
-  }
-  
+  color: blueviolet;
+}
 
-  #pass {
-    padding-left: 20px;
+body {
+  margin: 0;
+}
+
+h1 {
+  color: blue;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 1px gray solid;
+  margin: 0;
+}
+
+/* 순서3, css 파일에서, grid 옵션 작업.  */
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+  padding-left: 30px;
+}
+
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#article {
+  padding-left: 20px;
+}
+
+
+#pass {
+  padding-left: 20px;
+}
+
+#active {
+  color: red;
+
+}
+
+.saw {
+  color: blueviolet;
+}
+
+/* 3x3 사진첩 꾸미기 */
+#grid_pictures {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  /* 그리드 내부에서의 행, 열에 여백 주기.  */
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#iii {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.picture_container {
+  border: 5px pink dotted;
+}
+
+@media(max-width :800px) {
+  #grid {
+    display: block;
   }
-  
-  #active {
-    color: red;
-  
+
+  #grid ol {
+    border-right: none;
   }
-  
-  .saw {
-    color: blueviolet;
+
+  h1 {
+    border-bottom: none;
   }
-  
-  /* 3x3 사진첩 꾸미기 */
+
+
+
   #grid_pictures {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* 그리드 내부에서의 행, 열에 여백 주기.  */
     column-gap: 20px;
     row-gap: 20px;
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  #iii {
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-  }
-  .picture_container {
-    border: 5px pink dotted ;
-  }
+}
