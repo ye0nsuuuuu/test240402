@@ -80,7 +80,7 @@ img {
   border: 5px pink dotted;
 }
 
-@media(max-width :800px) {
+@media(max-width :1200px) {
   #grid {
     display: block;
   }
