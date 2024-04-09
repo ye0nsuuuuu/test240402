@@ -31,10 +31,14 @@ ol {
   padding: 20px;
 }
 
+
 a {
-  color: black;
+  color: default;
+  font-size: 20px;
   text-decoration: none;
 }
+
+
 
 #article {
   padding-left: 20px;
@@ -104,3 +108,5 @@ img {
     row-gap: 20px;
   }
 }
+
+
