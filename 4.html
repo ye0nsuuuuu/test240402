@@ -8,6 +8,115 @@
 </head>
 
 <body>
+  <!-- 작업순서1 -->
+  <input id="night_day" type="button" value="night" onclick="
+  nightDayHandler(this);
+  ">
+  <!-- 작업순서1 -->
+
+  <!-- 작업순서3 -->
+  <script>
+    var Body = {
+      // Body 라는 객체이고, 속성으로 
+      // 속성 키 : setColor , 값 : 함수 정의 : function(color) { ~
+      // 속성 키 : setBackgroundColor , 값 : 함수 정의 : function(color) { ~
+      setColor: function (color) {
+        document.querySelector('body').style.color = color;
+      },
+      setBackgroundColor: function (color) {
+        document.querySelector('body').style.backgroundColor = color;
+      }
+    }
+  </script>
+  <!-- 작업순서3 -->
+
+  <!-- 작업순서7 -->
+  <script>
+    var Links = {
+      setColor: function (color) {
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+          alist[i].style.color = color;
+          i = i + 1;
+        }
+      }
+    } 
+  </script>
+  <!-- 작업순서7 -->
+
+
+  <!-- 작업순서2 -->
+  <script>
+    // 작업순서4 : 사용 안하는 함수 주석.
+    // 이 함수들은 Body 객체 안에 넣어서 사용함. 
+    // function BodySetColor(color) {
+    //   document.querySelector('body').style.color = color;
+    // }
+
+    // function BodySetBackgroudColor(color) {
+    //   document.querySelector('body').style.backgroundColor = color;
+    // }
+
+    // function LinksSetColor(color) {
+    //   var alist = document.querySelectorAll('a');
+    //   var i = 0;
+    //   while (i < alist.length) {
+    //     alist[i].style.color = color;
+    //     console.log(alist[i]);
+    //     i = i + 1;
+    //   }
+    // }
+
+    function nightDayHandler(self) {
+      if (self.value === 'night') {
+        // 작업 순서 5, 사용안하는 함수 주석
+        // BodySetBackgroudColor('black');
+
+        // 작업 순서 6, 객체 버전으로 속성의 함수 이용하기. 
+        // 객체 속성의 함수 버전으로 사용해보기. 
+        Body.setBackgroundColor('black');
+
+        // 작업 순서 5, 사용안하는 함수 주석
+        // BodySetColor('white');
+
+        // 작업 순서 6, 객체 버전으로 속성의 함수 이용하기. 
+        // 객체 속성의 함수 버전으로 사용해보기. 
+        Body.setColor('white')
+
+        self.value = 'day'
+        //작업 순서 8, 기존 함수 버전 주석
+        // LinksSetColor('powderblue');
+
+        // 작업 순서 9, 객체 버전으로 변경. 
+        Links.setColor('powderblue')
+
+      } else {
+        // 작업 순서 5, 사용안하는 함수 주석
+        // BodySetBackgroudColor('white');
+
+        // 작업 순서 6, 객체 버전으로 속성의 함수 이용하기. 
+        // 객체 속성의 함수 버전으로 사용해보기. 
+        Body.setBackgroundColor('white')
+
+        // 작업 순서 5, 사용안하는 함수 주석
+        // BodySetColor('black');
+        // 작업 순서 6, 객체 버전으로 속성의 함수 이용하기. 
+        // 객체 속성의 함수 버전으로 사용해보기. 
+        Body.setColor('black')
+
+        self.value = 'night'
+        //작업 순서 8, 기존 함수 버전 주석
+        // LinksSetColor('blue');
+
+        // 작업 순서 9, 객체 버전으로 변경. 
+        Links.setColor('blue')
+
+      }
+    }
+  </script>
+  <!-- 작업순서2 -->
+
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
@@ -18,35 +127,35 @@
     </ol>
     <div id="article">
       <h2>사진첩</h2>
-      
+
       <div id="grid_pictures">
         <div class="picture">NAVIGATION
-          <img src="1.jpg" >
+          <img src="1.jpg">
         </div>
         <div>
           <div>ARTICLE</div>
-          <img src="2.jpg" >
+          <img src="2.jpg">
         </div>
         <div>yeonsu
-          <img src="3.jpg" >
+          <img src="3.jpg">
         </div>
         <div>NAVIGATION
-          <img src="1.jpg" >
+          <img src="1.jpg">
         </div>
         <div>ARTICLE
           <img src="2.jpg">
         </div>
         <div>yeonsu
-          <img src="3.jpg" >
+          <img src="3.jpg">
         </div>
         <div>NAVIGATION
-          <img src="1.jpg" >
+          <img src="1.jpg">
         </div>
         <div>ARTICLE
-          <img src="2.jpg" >
+          <img src="2.jpg">
         </div>
         <div>yeonsu
-          <img src="3.jpg" >
+          <img src="3.jpg">
         </div>
       </div>
     </div>

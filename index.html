@@ -5,11 +5,16 @@
     <title>WEB1 - WEB </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./CSS/gridtest.css">
+    <!-- 자바스크립트 파일 분리 -->
+    <script src="./js/color.js"></script>
 </head>
 
 <body>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
 
-    <input type="button" value="night" onclick="
+    <!-- <input type="button" value="night" onclick="
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
     ">
@@ -20,11 +25,11 @@
     ">
 
 <input id="s" type="text" onkeydown="alert('key down')">
-<input type="button" value="clear" onclick="s.value = null" >
+<input type="button" value="clear" onclick="s.value = null" > -->
     <h1>Yeonsu test landing page </h1>
     <h1><a href="index.html">WEB</a></h1>
 
-    <div id="grid"> 
+    <div id="grid">
         <ol>
             <li><a href="1.html" class="saw" id="active">HTML</a></li>
             <li><a href="2.html" class="saw"> CSS</a></li>

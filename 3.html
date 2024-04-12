@@ -9,6 +9,58 @@
 </head>
 
 <body>
+
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <script>
+        function BodySetColor(color) {
+            document.querySelector('body').style.color = color;
+        }
+
+        function BodySetBackgroudColor(color) {
+            document.querySelector('body').style.backgroundColor = color;
+        }
+
+        function LinksSetColor(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                console.log(alist[i]);
+                i = i + 1;
+            }
+        }
+
+        // 1) 함수의 정의 부분. 
+        function nightDayHandler(self) {
+            // var target = document.querySelector('body');
+            if (self.value === 'night') {
+                // target.style.backgroundColor = 'black';
+                // target.style.color = 'white';
+
+                BodySetBackgroudColor('black');
+                BodySetColor('white');
+                self.value = 'day'
+
+                // 함수 사용
+                LinksSetColor('powderblue');
+
+            } else {
+                // target.style.backgroundColor = 'white';
+                // target.style.color = 'black';
+
+                BodySetBackgroudColor('white');
+                BodySetColor('black');
+                self.value = 'night'
+
+                // 함수 사용
+                LinksSetColor('blue');
+
+            }
+        }
+
+    </script>
     <h1><a href="index.html">WEB</a></h1>
 
     <div id="grid">
