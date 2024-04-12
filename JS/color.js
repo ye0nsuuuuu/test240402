@@ -1,11 +1,21 @@
+// var Body = {
+//     setColor: function (color) {
+//         document.querySelector('body').style.color = color;
+//     },
+//     setBackgroundColor: function (color) {
+//         document.querySelector('body').style.backgroundColor = color;
+//     }
+// }
+// 제이쿼리 버전, 도구 이용
 var Body = {
-    setColor: function (color) {
-        document.querySelector('body').style.color = color;
-    },
-    setBackgroundColor: function (color) {
-        document.querySelector('body').style.backgroundColor = color;
-    }
-}
+	setColor: function(color) {
+ $('body').css('color', color);
+  },
+  setBackgroundColor: function(color) {
+  $('body').css('backgroundColor', color);
+  }
+ }
+
 
 var Links = {
     setColor: function (color) {
