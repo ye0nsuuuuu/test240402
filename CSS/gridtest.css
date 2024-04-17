@@ -93,7 +93,7 @@ img {
   object-fit: contain; */
  margin-left: 500px;
   display: block;
-  width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+  width: 65%; 
   height: auto;
   border-radius: 50px;
   }
@@ -106,7 +106,7 @@ img {
     object-fit: contain; */
    margin-left: 100px;
     display: block;
-    width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+    width: 65%; 
     height: auto;
     border-radius: 50px;
     }
@@ -118,7 +118,7 @@ img {
   object-fit: contain; */
  margin-left: 100px;
   display: block;
-  width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+  width: 65%; 
   height: auto;
   border-radius: 50px;
   }
