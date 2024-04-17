@@ -1,18 +1,12 @@
-#test {
-  color: blueviolet;
-}
+/* body{background-image: url('1.jpg');} */
 
-body {
-  margin: 0;
-}
-
-h1 {
+/* h1 {
   color: blue;
   font-size: 1em;
   text-align: center;
   border-bottom: 1px gray solid;
   margin: 0px;
-}
+} */
 
 /* 순서3, css 파일에서, grid 옵션 작업.  */
 #grid {
@@ -30,6 +24,7 @@ ol {
   margin: 10px;
   padding: 20px;
 }
+
 
 
 a {
@@ -54,9 +49,6 @@ a {
 
 }
 
-.saw {
-  color: blueviolet;
-}
 
 /* 3x3 사진첩 꾸미기 */
 #grid_pictures {
@@ -78,6 +70,62 @@ img {
   width: 50%;
   height: 50%;
   object-fit: contain;
+}
+
+#i9 {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+
+}
+
+#i14 {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+
+}
+
+
+#i15{
+  /* width: 80%;
+  height: 80%;
+  object-fit: contain; */
+ margin-left: 500px;
+  display: block;
+  width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+  height: auto;
+  border-radius: 50px;
+  }
+
+
+
+  #i16{
+    /* width: 80%;
+    height: 80%;
+    object-fit: contain; */
+   margin-left: 100px;
+    display: block;
+    width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+    height: auto;
+    border-radius: 50px;
+    }
+
+
+#i17{
+  /* width: 80%;
+  height: 80%;
+  object-fit: contain; */
+ margin-left: 100px;
+  display: block;
+  width: 65%; /* 이미지가 부모 요소에 꽉 차도록 설정합니다. */
+  height: auto;
+  border-radius: 50px;
+  }
+
+#ilogo {
+  width: 50%;
+  height: 50%;
 }
 
 .picture_container {
@@ -110,3 +158,160 @@ img {
 }
 
 
+.os {
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  display: table-cell;
+  width: 100%;
+  height: 300px;
+  vertical-align: middle;
+  padding: 35px 15px;
+  min-height: 500px;
+
+}
+
+.ow {
+  text-align: center;
+  background-color: rgb(235, 212, 198);
+  color: rgb(0, 0, 0);
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  padding: 35px 15px;
+  min-height: 500px;
+
+}
+
+
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+#ostitle {
+  vertical-align: top;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container2 {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+#loginh2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button2 {
+  background-color: #4285f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
+.google-btn {
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-btn i {
+  margin-right: 10px;
+}
+
+.main {
+  text-align: left;
+}
+
+#maintext {
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 400px;
+
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #000000;
+  color: rgb(199, 199, 199);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedan-regular-italic {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.noto-serif {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#night_day { margin-left:15px}

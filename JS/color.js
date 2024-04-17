@@ -31,7 +31,7 @@ var Links = {
 function nightDayHandler(self) {
     if (self.value === 'night') {
         Body.setBackgroundColor('black');
-        Body.setColor('white')
+        Body.setColor('gray')
 
         self.value = 'day'
 
@@ -47,3 +47,6 @@ function nightDayHandler(self) {
 
     }
 }
+
+
+
