@@ -103,3 +103,30 @@ footer {
     color: #666;
     font-size: 14px;
 }
+
+
+.write {
+    margin-left: 710px;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-left: 560px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    /* margin-right: 10px; */
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #3c78d8;
+}
